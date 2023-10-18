@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Recent Accounts" icon-name="standard:account">
+        <div class="slds-p-around_medium" style="max-height: 300px; overflow-x: hidden;">
+
+            <lightning-datatable data={lstAccounts}
+                                 columns={accColumns} 
+                                 key-field="Id"
+                                 hide-checkbox-column
+                                 show-row-number-column
+                                 onrowaction={handleRowActions} > </lightning-datatable>
+
+    </div>
+    </lightning-card> 
+</template>
